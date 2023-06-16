@@ -16,6 +16,10 @@ app.use(express.json());
 
 const PORT = process.env.PORT || 5000;
 
+app.get('/', (req, res) => {
+  res.json({ data: "Hello" })
+})
+
 app.use('/api/products', productRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/orders', orderRoutes);
