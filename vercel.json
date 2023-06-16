@@ -2,6 +2,6 @@
   "version": 2,
   "name": "tech-backend",
   "builds": [
-     { "src": "*.js", "use": "@vercel/node" }
+     { "src": "index.js", "use": "@vercel/node" }
   ]
 }
