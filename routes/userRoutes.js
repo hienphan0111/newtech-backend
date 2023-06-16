@@ -1,8 +1,8 @@
 import express from 'express';
-import User from '../models/User.js';
+import User from '../models/user.js';
 import asyncHandler from 'express-async-handler';
 import jwt from 'jsonwebtoken';
-import {protectRoute, admin } from '../middleware/authenticateMiddleware.js';
+import { protectRoute, admin } from '../middleware/authenticateMiddleware.js';
 import Order from '../models/Order.js';
 
 const userRoutes = express.Router();

@@ -49,7 +49,6 @@ const deleteOrder = asyncHandler(async(req, res) => {
 const setDelivered = asyncHandler(async(req, res) => {
   const order = await Order.findById(req.params.id);
 
-  console.log(req.body);
   if (order) {
     order.isDelivered = true;
     const updateOrder = await order.save();
