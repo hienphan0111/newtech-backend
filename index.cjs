@@ -1,7 +1,7 @@
-import { connectToDatabase } from './database.js';
 import dotenv from 'dotenv';
 
 import express from 'express';
+import { connectToDatabase } from './database.js';
 
 import productRoutes from './routes/productRoutes.js';
 import userRoutes from './routes/userRoutes.js';
